@@ -1,3 +1,4 @@
 # OTUS-PG
 
-## [Домашнее задание ко 2 занятию](homework_lesson2/report.md)
+Домашние задания:
+## [2 занятие (Работа с уровнями изоляции транзакции в PostgreSQL)](homework_lesson2/report.md)
