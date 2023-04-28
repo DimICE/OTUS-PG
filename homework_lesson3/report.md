@@ -3,7 +3,7 @@
 ### Цель:
 * установить PostgreSQL в Docker контейнере
 * настроить контейнер для внешнего подключения
-
+---
 Создаем ВМ с Ubuntu 22.04 в Parallels Desktop.
 Устанавливаем Docker согласно документации https://docs.docker.com/engine/install/ubuntu/
 ```
