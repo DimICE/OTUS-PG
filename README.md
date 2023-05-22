@@ -7,3 +7,4 @@
 ## [7 занятие (Работа с базами данных, пользователями и правами)](homework_lesson7/report.md)
 ## [8 занятие (Настройка autovacuum с учетом особенностей производительности)](homework_lesson8/report.md)
 ## [9 занятие (Механизм блокировок)](homework_lesson9/report.md)
+## [10 занятие (Работа с журналами)](homework_lesson10/report.md)
