@@ -8,3 +8,4 @@
 ## [8 занятие (Настройка autovacuum с учетом особенностей производительности)](homework_lesson8/report.md)
 ## [9 занятие (Механизм блокировок)](homework_lesson9/report.md)
 ## [10 занятие (Работа с журналами)](homework_lesson10/report.md)
+## [12 занятие (Нагрузочное тестирование и тюнинг PostgreSQL)](homework_lesson12/report.md)
