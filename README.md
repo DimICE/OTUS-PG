@@ -9,3 +9,8 @@
 ## [9 занятие (Механизм блокировок)](homework_lesson9/report.md)
 ## [10 занятие (Работа с журналами)](homework_lesson10/report.md)
 ## [12 занятие (Нагрузочное тестирование и тюнинг PostgreSQL)](homework_lesson12/report.md)
+## [13 занятие (Бэкапы)](homework_lesson13/report.md)
+## [14 занятие (Репликация)](homework_lesson14/report.md)
+## [18 занятие (Работа с индексами, join'ами, статистикой)](homework_lesson18/report.md)
+## [20 занятие (Секционирование таблицы)](homework_lesson20/report.md)
+## [23 занятие (Триггеры, поддержка заполнения витрин)](homework_lesson23/report.md)
