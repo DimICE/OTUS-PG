@@ -85,9 +85,62 @@ Index Scan using book_author_id_book_year_index on book  (cost=0.15..8.17 rows=1
 
 2 вариант:  
 >  1. Реализовать прямое соединение двух или более таблиц
->  2. Реализовать левостороннее (или правостороннее) соединение двух или более таблиц 
+
+Выводим с помощью inner join все наименования книг и их авторов:
+```
+SELECT
+    b.book_name,
+    a.author_name
+FROM
+    book b
+    INNER JOIN author a on a.author_id = b.author_id
+```
+>  2. Реализовать левостороннее (или правостороннее) соединение двух или более таблиц
+
+Выводим с помощью left join всех авторов у которых нет книг:
+```
+SELECT
+    a.author_name
+FROM
+    author a
+    LEFT JOIN book b on b.author_id = a.author_id
+WHERE
+    b.book_id IS NULL
+```
 >  3. Реализовать кросс соединение двух или более таблиц 
+
+Выводим с помощью cross join декартово произведение всех строк:
+```
+SELECT
+    a.author_id,
+    b.book_id
+FROM
+    author a
+    CROSS JOIN book b
+```
 >  4. Реализовать полное соединение двух или более таблиц 
->  5. Реализовать запрос, в котором будут использованы разные типы соединений 
->  6. Сделать комментарии на каждый запрос 
->  7. К работе приложить структуру таблиц, для которых выполнялись соединения
+
+Выводим с помощью full join все книги и всех авторов (даже если у книги нет автора или у автора нет книг):
+```
+SELECT
+    b.book_name,
+    a.author_name
+FROM
+    author a
+    FULL JOIN book b on a.author_id = b.author_id
+```
+>  5. Реализовать запрос, в котором будут использованы разные типы соединений
+
+Для автора с id = 1 выводим наименования всех его книг + наименования всех книг выпущенных в том же году (при наличии таковых):
+```
+SELECT
+    a.author_name,
+    b.book_name,
+    b2.book_name
+FROM
+    author a
+    INNER JOIN book b on a.author_id = b.author_id
+    LEFT JOIN book b2 on b2.book_year = b.book_year
+WHERE
+    a.author_id = 1
+```
